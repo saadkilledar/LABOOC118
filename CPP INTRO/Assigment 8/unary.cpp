@@ -22,7 +22,15 @@ public:
         inch--;
 
         cout << "\nFeet & Inches (Decrement): "
-             << feet << " " << inch;
+             << feet << " " << inch <<"\n";
+    }
+    void operator+()
+    {
+        feet++;
+        inch++;
+
+        cout << "\nFeet & Inches (Decrement): "
+             << feet << " " << inch <<"\n";
     }
 };
 
@@ -30,9 +38,14 @@ public:
 int main()
 {
     Distance d1(8, 9);
+    int a=10;
+    int b=20;
+    int c=a+b;
 
     // Use unary operator as a single operand
     -d1;
+    cout<< d1.feet<<" "<<d1.inch;
+    
 
     return 0;
 }
